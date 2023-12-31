@@ -18,6 +18,6 @@
 
 `git clone https://github.com/CRAZY-CYBER-404/ALVE-XD.git`
 
-`cd BDMC`
+`cd ALVE-XD`
 
 `python XD.py`
