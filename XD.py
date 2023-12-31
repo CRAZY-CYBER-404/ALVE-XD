@@ -2,9 +2,7 @@ import os, platform, time, sys
 #os.system('pip install requests')
 os.system('git pull --quiet 2>/dev/null')
 bit = platform.architecture()[0]
-if bit == '32bit':
-
-print('\3[0;97m[•] \3[1;32mCONGRATULATIONS 64BIT SUCCESS')
+if bit == '32bit':print('\3[0;97m[•] \3[1;32mCONGRATULATIONS 64BIT SUCCESS')
 
 import ALVE32
 
