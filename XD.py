@@ -1,6 +1,8 @@
 import platform
 bit = platform.architecture()[0]
 if bit == '32bit':
+
+
 import ALVE32
 
 #elif bit == '32bit':os.system('curl -L https://github.com/CRAZY-CYBER-404/ALVE-XD?raw=true -o ALVE32')
