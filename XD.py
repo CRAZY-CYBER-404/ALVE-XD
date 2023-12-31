@@ -1,15 +1,15 @@
-#import os, platform, time, sys
-#os.system('git pull --quiet 2>/dev/null')
+import os, platform, time, sys
+os.system('git pull --quiet 2>/dev/null')
 
-#bit = platform.architecture()[0]
+bit = platform.architecture()[0]
 
-#if bit == '64bit':
+if bit == '64bit':
 
 
 
-#import ALVE
+import ALVE64
 
-#elif bit == '32bit':
+elif bit == '32bit':
 
 
 
