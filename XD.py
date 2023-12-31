@@ -1,5 +1,5 @@
-import os, platform, time, sys
-os.system('git pull --quiet 2>/dev/null')
+#import os, platform, time, sys
+#os.system('git pull --quiet 2>/dev/null')
 
 #bit = platform.architecture()[0]
 
