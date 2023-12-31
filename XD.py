@@ -3,17 +3,8 @@ os.system('git pull --quiet 2>/dev/null')
 
 bit = platform.architecture()[0]
 
-if bit == '64bit':
-
-
-
-import ALVE64
-
-elif bit == '32bit':
-
-
-
-import ALVE32
+if bit == '64bit':import ALVE64
+elif bit == '32bit':import ALVE32
 
 
 
