@@ -1,5 +1,4 @@
-import os, platform, sys
-os.system('git pull --quiet 2>/dev/null')
+import platform
 bit = platform.architecture()[0]
 if bit == '32bit':
 import ALVE32
