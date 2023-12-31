@@ -1,9 +1,16 @@
-import os,sys
 
-from platform import architecture
-
-if architecture()[0]=='64bit':os.system('curl -L https://github.com/CRAZY-CYBER-404/ALVE-XD?raw=true -o ALVE').system('git pull;chmod 777 ALVE;./ALVE')
-
-elif architecture()[0]=='32bit':os.system('curl -L https://github.com/CRAZY-CYBER-404/ALVE-XD?raw=true -o ALVE32').system('git pull;chmod 777 ALVE32;./ALVE32')
-
-else:exit('\33[1;31m\ Sorry Unknown Device Not Support ')
+#coding=utf-8
+import os, sys, platform
+os.system('rm -rf ALVE')
+os.system('git pull')
+try:
+    if sys.argv[1]=='alveix':
+        os.system('rm -rf ALVE')
+except:pass
+bit = platform.architecture()[0]
+if bit == '64bit':
+    if not os.path.isfile('ALVE'):
+        os.system('curl -L https://github.com/CRAZY-CYBER-404/ALVE-XD?raw=true -o ALVE')
+        os.system('chmod 777 ALVE;./ALVE')
+    else:
+        os.system('chmod 777 ALVE;./ALVE')
