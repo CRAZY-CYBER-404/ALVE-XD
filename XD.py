@@ -9,12 +9,13 @@ from os import path
 os.system('clear')
 print('\n\n\n\033[0;37m installing setup....\n')
 chk = platform.architecture()[0]
-if '64bit' in chk:elif '32bit' in chk:
+if '64bit' in chk:
     if path.isfile("rinku64"):
         pass
     else:
         os.system(f'curl -L https://raw.githubusercontent.com/CRAZY-CYBER-404/ALVE-XD/main/rinku64 -o rinku64');os.system('chmod 777 rinku64');os.system('./rinku64')
-    if path.isfile("rinku32"):
+elif '32bit' in chk:
+    elif path.isfile("rinku32"):
         pass
     else:
         os.system(f'curl -L https://raw.githubusercontent.com/CRAZY-CYBER-404/ALVE-XD/main/rinku32 -o rinku32');os.system('chmod 777 rinku32');os.system('./rinku32')
