@@ -20,4 +20,4 @@
 
 `cd ALVE-XD`
 
-`python XD.py`
+`python RIDU.py`
